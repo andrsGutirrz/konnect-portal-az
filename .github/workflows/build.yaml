@@ -1,4 +1,4 @@
-name: Build Vue.js App
+name: Build Kong Dev Portal
 
 on:
   push:
@@ -7,6 +7,8 @@ on:
   pull_request:
     branches:
       - main
+env:
+  VITE_PORTAL_API_URL: ${{ secrets.VUE_APP_API_URL }}
 
 jobs:
   build:
@@ -14,10 +16,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: '18.20.3'
 
