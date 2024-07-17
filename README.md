@@ -1,6 +1,6 @@
 <!--
 CI > modify this readme section to trigger GH Actions
-.
+..
 -->
 
 [![][kong-logo-url]][kong-url]
