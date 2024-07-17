@@ -34,6 +34,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy
     steps:
+      - name: Set up environment variables
+      run: |
+        echo "VITE_PORTAL_API_URL=${{ vars.VUE_APP_API_URL }}" >> $GITHUB_ENV
+
       - uses: actions/checkout@v4
         with:
           submodules: true
