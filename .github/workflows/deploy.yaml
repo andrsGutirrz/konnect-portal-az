@@ -12,7 +12,7 @@ name: Deploy web app to Azure Static Web Apps
 env:
   APP_LOCATION: "." # location of your client code
   OUTPUT_LOCATION: "dist" # location of client code build output
-  VITE_PORTAL_API_URL: 'https://792de3976b0b.us.portal.konghq.com/'
+  VITE_PORTAL_API_URL: 'https://api.andresgutierrez.tech/'
 
 on:
   push:
