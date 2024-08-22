@@ -2,8 +2,8 @@
     "routes": [
       {
         "route": "/*",
-        "methods": ["PUT", "POST", "PATCH", "DELETE"],
-        "allowedRoles": ["authenticated"]
+        "rewrite": "/index.html",
+        "methods": ["PUT", "POST", "PATCH", "DELETE"]
       }
     ]
 }
